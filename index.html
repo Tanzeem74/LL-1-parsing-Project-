@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/6485bf4df0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="persar.html">Persar</a></li>
+                            <li><a href="members.html">Project Members</a></li>
+                            <li><a target="_blank"
+                                    href="https://www.geeksforgeeks.org/compiler-design/construction-of-ll1-parsing-table/">LL(1)
+                                    Tutorial</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">Compiler <span class="text-orange-500">Lab Project</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="persar.html">Persar</a></li>
+                        <li><a href="members.html">Project Members</a></li>
+                        <li><a target="_blank"
+                                href="https://www.geeksforgeeks.org/compiler-design/construction-of-ll1-parsing-table/">LL(1)
+                                Tutorial</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="space-x-2">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-solid fa-x"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative bg-slate-900 py-24 px-6 overflow-hidden min-h-[80vh] flex items-center">
+
+        <!-- Background Decorative Elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-1/4 w-72 h-72 bg-indigo-600/20 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[150px]"></div>
+            <div class="absolute inset-0 opacity-[0.03]"
+                style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 30px 30px;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+
+            <!-- Left Content: Text & CTA -->
+            <div class="text-left space-y-8">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold tracking-widest uppercase">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+                    </span>
+                    Compiler Design Tool 2026
+                </div>
+
+                <h1 class="text-5xl lg:text-7xl font-black text-white leading-tight">
+                    Master the Logic of <span
+                        class="text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-400">LL(1)
+                        Parsing</span>
+                </h1>
+
+                <p class="text-slate-400 text-lg max-w-xl leading-relaxed">
+                    Visualize FIRST and FOLLOW sets, construct predictive parsing tables, and simulate stack-based
+                    string validation with our high-performance parser engine.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#tool"
+                        class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-2xl transition-all shadow-lg shadow-indigo-500/25 flex items-center gap-2 group">
+                        Get Started
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </a>
+                    <a href="#documentation"
+                        class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-2xl transition-all border border-slate-700">
+                        View Docs
+                    </a>
+                </div>
+
+                <!-- Stats/Tech stack brief -->
+                <div class="flex items-center gap-8 pt-4 border-t border-slate-800">
+                    <div>
+                        <span class="block text-2xl font-bold text-white">100%</span>
+                        <span class="text-xs text-slate-500 uppercase tracking-wide">Accurate Logic</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-bold text-white">Visual</span>
+                        <span class="text-xs text-slate-500 uppercase tracking-wide">Stack Tracing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content: Visual Representation -->
+            <div class="relative hidden lg:block">
+                <div
+                    class="relative z-10 bg-slate-800/50 backdrop-blur-xl border border-slate-700 rounded-3xl p-6 shadow-2xl overflow-hidden group">
+                    <!-- Mockup Terminal/Code Area -->
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+                        <span class="text-[10px] text-slate-500 font-mono ml-2 italic">// parser_engine.js</span>
+                    </div>
+
+                    <div class="space-y-3 font-mono text-sm">
+                        <div class="flex gap-4">
+                            <span class="text-indigo-400">INPUT:</span>
+                            <span class="text-slate-300 italic">E -> T E'</span>
+                        </div>
+                        <div class="h-px bg-slate-700 w-full my-2"></div>
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-[11px]">
+                                <span class="text-slate-500 font-bold">FIRST(E)</span>
+                                <span class="text-emerald-400">{ (, id }</span>
+                            </div>
+                            <div class="flex justify-between text-[11px]">
+                                <span class="text-slate-500 font-bold">FOLLOW(E)</span>
+                                <span class="text-purple-400">{ $, ) }</span>
+                            </div>
+                        </div>
+
+                        <!-- Decorative Table Animation -->
+                        <div
+                            class="mt-6 p-4 bg-slate-900/50 rounded-xl border border-slate-700/50 group-hover:border-indigo-500/30 transition-colors">
+                            <div class="flex items-center gap-3 text-indigo-400 mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                </svg>
+                                <span class="text-xs font-bold uppercase tracking-widest">Parsing Table
+                                    Construction</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-indigo-500 h-full w-[85%] animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abstract background shape behind the mockup -->
+                <div
+                    class="absolute -inset-4 bg-linear-to-tr from-indigo-500/20 to-purple-500/20 rounded-[40px] blur-2xl -z-10">
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
