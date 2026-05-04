@@ -3,30 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>LL(1) Parser Engine - Complete</title>
+    <title>LL(1) Parser Engine - Fixed</title>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/6485bf4df0.js" crossorigin="anonymous"></script>
+
     <style>
         .font-mono {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: monospace;
         }
 
         .success {
-            background-color: #dcfce7;
+            background: #dcfce7;
             color: #166534;
-            border: 1px solid #bbf7d0;
+            padding: 10px;
         }
 
         .error {
-            background-color: #fee2e2;
+            background: #fee2e2;
             color: #991b1b;
-            border: 1px solid #fecaca;
+            padding: 10px;
         }
     </style>
-    <script src="https://kit.fontawesome.com/6485bf4df0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <header>
         <nav>
             <div class="navbar bg-base-100 shadow-sm">
@@ -42,7 +45,7 @@
                         <ul tabindex="-1"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="persar.html">Persar</a></li>
+                            <li><a href="parser.html">parser</a></li>
                             <li><a href="members.html">Project Members</a></li>
                             <li><a target="_blank"
                                     href="https://www.geeksforgeeks.org/compiler-design/construction-of-ll1-parsing-table/">LL(1)
@@ -54,7 +57,7 @@
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="persar.html">Persar</a></li>
+                        <li><a href="parser.html">parser</a></li>
                         <li><a href="members.html">Project Members</a></li>
                         <li><a target="_blank"
                                 href="https://www.geeksforgeeks.org/compiler-design/construction-of-ll1-parsing-table/">LL(1)
@@ -71,12 +74,13 @@
             </div>
         </nav>
     </header>
+
     <section class="bg-gray-50 p-6 min-h-screen">
         <div class="max-w-7xl mx-auto">
-            <h1 class="text-3xl font-bold mb-6 text-center text-blue-700">Compiler Lab: LL(1) Parser</h1>
+            <h1 class="text-3xl font-bold mb-6 text-center text-blue-700">LL(1) Parser</h1>
 
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                <!-- Input Section -->
+                <!-- Input-->
                 <div class="bg-white p-5 rounded-lg shadow-md border border-gray-200">
                     <h2 class="font-bold mb-4 text-blue-600 border-b pb-2">1. Input Configuration</h2>
                     <label class="text-xs font-bold text-gray-500 uppercase">Grammar Rules</label>
@@ -95,7 +99,7 @@ F -> ( E ) | id</textarea>
                     </button>
                 </div>
 
-                <!-- Output Section -->
+                <!-- Output -->
                 <div class="lg:col-span-3 space-y-6">
                     <div id="resultsArea" class="hidden space-y-6">
                         <!-- FIRST/FOLLOW -->
@@ -201,7 +205,7 @@ F -> ( E ) | id</textarea>
                     });
                 }
 
-                // --- Parsing Table Construction ---
+                // Parsing Table Construction
                 let table = {};
                 nonTerminals.forEach(nt => { table[nt] = {}; });
                 nonTerminals.forEach(A => {
@@ -307,6 +311,8 @@ F -> ( E ) | id</textarea>
             }
         </script>
     </section>
+
+
 </body>
 
 </html>
